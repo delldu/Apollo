@@ -10,7 +10,7 @@ cc_library(
     hdrs = [
         "control_gflags.h",
     ],
-    copts = ['-DMODULE_NAME=\\"control\\"'],
+    copts = ["-DMODULE_NAME=\\\"control\\\""],
     deps = [
         "//external:gflags",
     ],
@@ -24,7 +24,7 @@ cc_library(
     hdrs = [
         "hysteresis_filter.h",
     ],
-    copts = ['-DMODULE_NAME=\\"control\\"'],
+    copts = ["-DMODULE_NAME=\\\"control\\\""],
 )
 
 cc_library(
@@ -35,7 +35,7 @@ cc_library(
     hdrs = [
         "interpolation_1d.h",
     ],
-    copts = ['-DMODULE_NAME=\\"control\\"'],
+    copts = ["-DMODULE_NAME=\\\"control\\\""],
     deps = [
         "//cyber",
         "@eigen",
@@ -50,7 +50,7 @@ cc_library(
     hdrs = [
         "interpolation_2d.h",
     ],
-    copts = ['-DMODULE_NAME=\\"control\\"'],
+    copts = ["-DMODULE_NAME=\\\"control\\\""],
     deps = [
         "//cyber",
         "@eigen",
@@ -65,7 +65,7 @@ cc_library(
     hdrs = [
         "leadlag_controller.h",
     ],
-    copts = ['-DMODULE_NAME=\\"control\\"'],
+    copts = ["-DMODULE_NAME=\\\"control\\\""],
     deps = [
         "//cyber",
         "//modules/control/proto:control_proto",
@@ -80,7 +80,7 @@ cc_library(
     hdrs = [
         "pid_controller.h",
     ],
-    copts = ['-DMODULE_NAME=\\"control\\"'],
+    copts = ["-DMODULE_NAME=\\\"control\\\""],
     deps = [
         "//cyber",
         "//modules/control/proto:control_proto",
@@ -95,7 +95,7 @@ cc_library(
     hdrs = [
         "pid_BC_controller.h",
     ],
-    copts = ['-DMODULE_NAME=\\"control\\"'],
+    copts = ["-DMODULE_NAME=\\\"control\\\""],
     deps = [
         ":pid_controller",
         "//cyber",
@@ -112,7 +112,7 @@ cc_library(
     hdrs = [
         "pid_IC_controller.h",
     ],
-    copts = ['-DMODULE_NAME=\\"control\\"'],
+    copts = ["-DMODULE_NAME=\\\"control\\\""],
     deps = [
         ":pid_controller",
         "//cyber",
@@ -129,7 +129,7 @@ cc_library(
     hdrs = [
         "trajectory_analyzer.h",
     ],
-    copts = ['-DMODULE_NAME=\\"control\\"'],
+    copts = ["-DMODULE_NAME=\\\"control\\\""],
     deps = [
         ":control_gflags",
         "//cyber",
@@ -143,7 +143,7 @@ cc_library(
 
 cc_library(
     name = "common",
-    copts = ['-DMODULE_NAME=\\"control\\"'],
+    copts = ["-DMODULE_NAME=\\\"control\\\""],
     deps = [
         ":control_gflags",
         ":hysteresis_filter",

@@ -41,7 +41,7 @@ cc_library(
     hdrs = [
         "static_transform_component.h",
     ],
-    copts = ['-DMODULE_NAME=\\"static_transform\\"'],
+    copts = ["-DMODULE_NAME=\\\"static_transform\\\""],
     deps = [
         "//cyber",
         "//modules/common/adapters:adapter_gflags",

@@ -8,7 +8,7 @@ cc_binary(
         "monitor.cc",
         "monitor.h",
     ],
-    copts = ['-DMODULE_NAME=\\"monitor\\"'],
+    copts = ["-DMODULE_NAME=\\\"monitor\\\""],
     linkshared = True,
     linkstatic = False,
     deps = [

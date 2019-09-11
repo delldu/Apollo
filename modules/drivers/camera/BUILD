@@ -22,7 +22,7 @@ cc_library(
     name = "camera_component_lib",
     srcs = ["camera_component.cc"],
     hdrs = ["camera_component.h"],
-    copts = ['-DMODULE_NAME=\\"camera\\"'],
+    copts = ["-DMODULE_NAME=\\\"camera\\\""],
     deps = [
         ":camera",
         "//cyber",
@@ -34,7 +34,7 @@ cc_library(
     name = "compress_component_lib",
     srcs = ["compress_component.cc"],
     hdrs = ["compress_component.h"],
-    copts = ['-DMODULE_NAME=\\"camera\\"'],
+    copts = ["-DMODULE_NAME=\\\"camera\\\""],
     linkopts = [
         "-lopencv_core",
         "-lopencv_highgui",

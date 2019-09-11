@@ -19,7 +19,7 @@ cc_library(
     hdrs = [
         "topo_range.h",
     ],
-    copts = ['-DMODULE_NAME=\\"routing\\"'],
+    copts = ["-DMODULE_NAME=\\\"routing\\\""],
     deps = [
         "//modules/routing/common:routing_gflags",
     ],
@@ -33,7 +33,7 @@ cc_library(
     hdrs = [
         "topo_range_manager.h",
     ],
-    copts = ['-DMODULE_NAME=\\"routing\\"'],
+    copts = ["-DMODULE_NAME=\\\"routing\\\""],
     deps = [
         ":routing_topo_node",
     ],
@@ -44,7 +44,7 @@ cc_library(
     hdrs = [
         "range_utils.h",
     ],
-    copts = ['-DMODULE_NAME=\\"routing\\"'],
+    copts = ["-DMODULE_NAME=\\\"routing\\\""],
     deps = [
     ],
 )
@@ -57,7 +57,7 @@ cc_library(
     hdrs = [
         "node_with_range.h",
     ],
-    copts = ['-DMODULE_NAME=\\"routing\\"'],
+    copts = ["-DMODULE_NAME=\\\"routing\\\""],
     deps = [
         ":routing_topo_node",
     ],
@@ -71,7 +71,7 @@ cc_library(
     hdrs = [
         "topo_node.h",
     ],
-    copts = ['-DMODULE_NAME=\\"routing\\"'],
+    copts = ["-DMODULE_NAME=\\\"routing\\\""],
     deps = [
         ":routing_range_utils",
         ":routing_topo_range",
@@ -89,7 +89,7 @@ cc_library(
     hdrs = [
         "topo_graph.h",
     ],
-    copts = ['-DMODULE_NAME=\\"routing\\"'],
+    copts = ["-DMODULE_NAME=\\\"routing\\\""],
     deps = [
         ":routing_topo_node",
     ],
@@ -103,7 +103,7 @@ cc_library(
     hdrs = [
         "sub_topo_graph.h",
     ],
-    copts = ['-DMODULE_NAME=\\"routing\\"'],
+    copts = ["-DMODULE_NAME=\\\"routing\\\""],
     deps = [
         ":routing_node_with_range",
     ],
@@ -117,7 +117,7 @@ cc_library(
     hdrs = [
         "topo_test_utils.h",
     ],
-    copts = ['-DMODULE_NAME=\\"routing\\"'],
+    copts = ["-DMODULE_NAME=\\\"routing\\\""],
     deps = [
         ":routing_topo_graph",
     ],

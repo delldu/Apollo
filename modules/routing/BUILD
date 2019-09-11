@@ -10,7 +10,7 @@ cc_library(
     hdrs = [
         "routing.h",
     ],
-    copts = ['-DMODULE_NAME=\\"routing\\"'],
+    copts = ["-DMODULE_NAME=\\\"routing\\\""],
     deps = [
         "//modules/common/adapters:adapter_gflags",
         "//modules/common/monitor_log",
@@ -27,7 +27,7 @@ cc_library(
     hdrs = [
         "routing_component.h",
     ],
-    copts = ['-DMODULE_NAME=\\"routing\\"'],
+    copts = ["-DMODULE_NAME=\\\"routing\\\""],
     deps = [
         ":routing_lib",
     ],

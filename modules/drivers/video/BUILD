@@ -13,7 +13,7 @@ cc_library(
     name = "video_driver_component_lib",
     srcs = ["video_driver_component.cc"],
     hdrs = ["video_driver_component.h"],
-    copts = ['-DMODULE_NAME=\\"video\\"'],
+    copts = ["-DMODULE_NAME=\\\"video\\\""],
     deps = [
         "//cyber",
         "//modules/common/util:message_util",

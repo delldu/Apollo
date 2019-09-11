@@ -39,7 +39,7 @@ cc_library(
     hdrs = [
         "racobit_radar_canbus_component.h",
     ],
-    copts = ['-DMODULE_NAME=\\"racobit_radar_canbus\\"'],
+    copts = ["-DMODULE_NAME=\\\"racobit_radar_canbus\\\""],
     deps = [
         ":racobit_radar_message_manager",
         "//cyber",

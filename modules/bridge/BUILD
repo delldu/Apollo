@@ -4,7 +4,7 @@ package(default_visibility = ["//visibility:public"])
 
 cc_library(
     name = "udp_bridge",
-    copts = ['-DMODULE_NAME=\\"bridge\\"'],
+    copts = ["-DMODULE_NAME=\\\"bridge\\\""],
     deps = [
         "//cyber",
         "//external:gflags",
@@ -33,7 +33,7 @@ cc_library(
     hdrs = [
         "udp_bridge_sender_component.h",
     ],
-    copts = ['-DMODULE_NAME=\\"bridge\\"'],
+    copts = ["-DMODULE_NAME=\\\"bridge\\\""],
     deps = [
         ":udp_bridge",
     ],
@@ -47,7 +47,7 @@ cc_library(
     hdrs = [
         "udp_bridge_receiver_component.h",
     ],
-    copts = ['-DMODULE_NAME=\\"bridge\\"'],
+    copts = ["-DMODULE_NAME=\\\"bridge\\\""],
     deps = [
         ":udp_bridge",
         "//modules/bridge/common:udp_listener",
@@ -62,7 +62,7 @@ cc_library(
     hdrs = [
         "udp_bridge_multi_receiver_component.h",
     ],
-    copts = ['-DMODULE_NAME=\\"bridge\\"'],
+    copts = ["-DMODULE_NAME=\\\"bridge\\\""],
     deps = [
         ":udp_bridge",
         "//modules/bridge/common:udp_listener",

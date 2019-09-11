@@ -10,7 +10,7 @@ cc_library(
     hdrs = [
         "tick_component.h",
     ],
-    copts = ['-DMODULE_NAME=\\"tick\\"'],
+    copts = ["-DMODULE_NAME=\\\"tick\\\""],
     deps = [
         "//cyber",
         "//modules/common/adapters:adapter_gflags",

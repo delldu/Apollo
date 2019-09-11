@@ -6,7 +6,7 @@ cc_library(
     name = "control_lib",
     srcs = [
     ],
-    copts = ['-DMODULE_NAME=\\"control\\"'],
+    copts = ["-DMODULE_NAME=\\\"control\\\""],
     deps = [
         "//cyber",
         "//external:gflags",
@@ -34,7 +34,7 @@ cc_library(
     hdrs = [
         "control_component.h",
     ],
-    copts = ['-DMODULE_NAME=\\"control\\"'],
+    copts = ["-DMODULE_NAME=\\\"control\\\""],
     deps = [
         ":control_lib",
     ],

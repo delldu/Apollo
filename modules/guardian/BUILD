@@ -8,7 +8,7 @@ cc_binary(
         "guardian_component.cc",
         "guardian_component.h",
     ],
-    copts = ['-DMODULE_NAME=\\"guardian\\"'],
+    copts = ["-DMODULE_NAME=\\\"guardian\\\""],
     linkshared = True,
     linkstatic = False,
     deps = [

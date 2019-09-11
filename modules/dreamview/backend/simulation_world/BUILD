@@ -10,7 +10,7 @@ cc_library(
     hdrs = [
         "simulation_world_service.h",
     ],
-    copts = ['-DMODULE_NAME=\\"dreamview\\"'],
+    copts = ["-DMODULE_NAME=\\\"dreamview\\\""],
     deps = [
         "//cyber",
         "//modules/canbus/proto:canbus_proto",
@@ -61,7 +61,7 @@ cc_library(
     hdrs = [
         "simulation_world_updater.h",
     ],
-    copts = ['-DMODULE_NAME=\\"dreamview\\"'],
+    copts = ["-DMODULE_NAME=\\\"dreamview\\\""],
     deps = [
         ":simulation_world_service",
         "//modules/common/util:map_util",

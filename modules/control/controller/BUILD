@@ -8,7 +8,7 @@ cc_library(
     hdrs = [
         "controller.h",
     ],
-    copts = ['-DMODULE_NAME=\\"control\\"'],
+    copts = ["-DMODULE_NAME=\\\"control\\\""],
 )
 
 cc_library(
@@ -19,7 +19,7 @@ cc_library(
     hdrs = [
         "lat_controller.h",
     ],
-    copts = ['-DMODULE_NAME=\\"control\\"'],
+    copts = ["-DMODULE_NAME=\\\"control\\\""],
     deps = [
         ":controller_interface",
         "//cyber",
@@ -51,7 +51,7 @@ cc_library(
     hdrs = [
         "lon_controller.h",
     ],
-    copts = ['-DMODULE_NAME=\\"control\\"'],
+    copts = ["-DMODULE_NAME=\\\"control\\\""],
     deps = [
         ":controller_interface",
         "//cyber",
@@ -78,7 +78,7 @@ cc_library(
     hdrs = [
         "mpc_controller.h",
     ],
-    copts = ['-DMODULE_NAME=\\"control\\"'],
+    copts = ["-DMODULE_NAME=\\\"control\\\""],
     deps = [
         ":controller_interface",
         "//cyber",
@@ -104,7 +104,7 @@ cc_library(
 
 cc_library(
     name = "controller",
-    copts = ['-DMODULE_NAME=\\"control\\"'],
+    copts = ["-DMODULE_NAME=\\\"control\\\""],
     deps = [
         ":controller_agent",
         ":controller_interface",
@@ -123,7 +123,7 @@ cc_library(
     hdrs = [
         "controller_agent.h",
     ],
-    copts = ['-DMODULE_NAME=\\"control\\"'],
+    copts = ["-DMODULE_NAME=\\\"control\\\""],
     deps = [
         ":controller_interface",
         ":lat_controller",

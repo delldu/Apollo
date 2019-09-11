@@ -67,7 +67,7 @@ cc_library(
     hdrs = [
         "third_party_perception_component.h",
     ],
-    copts = ['-DMODULE_NAME=\\"third_party_perception\\"'],
+    copts = ["-DMODULE_NAME=\\\"third_party_perception\\\""],
     deps = [
         ":third_party_perception_lib",
     ],

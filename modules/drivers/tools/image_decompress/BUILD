@@ -10,7 +10,7 @@ cc_library(
     hdrs = [
         "image_decompress.h",
     ],
-    copts = ['-DMODULE_NAME=\\"image_decompress\\"'],
+    copts = ["-DMODULE_NAME=\\\"image_decompress\\\""],
     linkopts = [
         "-lopencv_core",
         "-lopencv_highgui",

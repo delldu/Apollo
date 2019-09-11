@@ -24,7 +24,7 @@ cc_library(
         "trafficlights_perception_component.h",
     ],
     copts = [
-        '-DMODULE_NAME=\\"perception\\"',
+        "-DMODULE_NAME=\\\"perception\\\"",
     ],
     deps = [
         "//cyber",
@@ -98,7 +98,7 @@ cc_library(
         "segmentation_component.h",
     ],
     copts = [
-        '-DMODULE_NAME=\\"perception\\"',
+        "-DMODULE_NAME=\\\"perception\\\"",
     ],
     deps = [
         "//cyber",

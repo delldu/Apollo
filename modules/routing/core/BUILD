@@ -17,7 +17,7 @@ cc_library(
     hdrs = [
         "navigator.h",
     ],
-    copts = ['-DMODULE_NAME=\\"routing\\"'],
+    copts = ["-DMODULE_NAME=\\\"routing\\\""],
     deps = [
         ":routing_black_list_range_generator",
         ":routing_result_generator",
@@ -34,7 +34,7 @@ cc_library(
     hdrs = [
         "black_list_range_generator.h",
     ],
-    copts = ['-DMODULE_NAME=\\"routing\\"'],
+    copts = ["-DMODULE_NAME=\\\"routing\\\""],
     deps = [
         "//modules/routing/graph",
     ],
@@ -48,7 +48,7 @@ cc_library(
     hdrs = [
         "result_generator.h",
     ],
-    copts = ['-DMODULE_NAME=\\"routing\\"'],
+    copts = ["-DMODULE_NAME=\\\"routing\\\""],
     deps = [
         "//modules/routing/graph",
     ],

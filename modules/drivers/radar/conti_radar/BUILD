@@ -27,7 +27,7 @@ cc_library(
     hdrs = [
         "conti_radar_canbus_component.h",
     ],
-    copts = ['-DMODULE_NAME=\\"conti_radar\\"'],
+    copts = ["-DMODULE_NAME=\\\"conti_radar\\\""],
     deps = [
         ":conti_radar_message_manager",
         "//cyber",

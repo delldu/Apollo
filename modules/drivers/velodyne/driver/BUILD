@@ -13,7 +13,7 @@ cc_library(
     name = "velodyne_driver_component_lib",
     srcs = ["velodyne_driver_component.cc"],
     hdrs = ["velodyne_driver_component.h"],
-    copts = ['-DMODULE_NAME=\\"velodyne\\"'],
+    copts = ["-DMODULE_NAME=\\\"velodyne\\\""],
     deps = [
         "//cyber",
         "//modules/common/util:message_util",
@@ -34,7 +34,7 @@ cc_library(
         "input.h",
         "socket_input.h",
     ],
-    copts = ['-DMODULE_NAME=\\"velodyne\\"'],
+    copts = ["-DMODULE_NAME=\\\"velodyne\\\""],
     linkopts = [
         "-lpcap",
     ],
